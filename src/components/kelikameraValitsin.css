@@ -1,0 +1,35 @@
+.kelikamera-container {
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.kuva-osa img {
+  object-fit: contain;
+  max-height: 100%;
+}
+
+.kuva-osa, .kartta-osa {
+  flex: 1;
+}
+
+.kelikamera-kuva {
+  width: 100%;
+  border-radius: 6px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+}
+
+@media (max-width: 768px) {
+  .kelikamera-container {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .kuva-osa, .kartta-osa {
+    height: auto;
+  }
+
+  .kartta-osa {
+    height: 400px;
+    min-height: 200px;
+  }
+}
