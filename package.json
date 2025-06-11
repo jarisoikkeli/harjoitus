@@ -1,17 +1,24 @@
 {
   "name": "harjoitus",
   "version": "0.0.1",
+  "homepage": "https://jarisoikkeli.github.io/harjoitus",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
+    "@react-three/drei": "^9.122.0",
+    "@react-three/fiber": "^8.18.0",
+    "gh-pages": "^6.3.0",
     "leaflet": "^1.9.4",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-leaflet": "^4.2.1",
-    "react-router-dom": "^6.22.1"
+    "react-router-dom": "^6.22.1",
+    "three": "^0.177.0"
   },
   "devDependencies": {
     "@vitejs/plugin-react": "^4.5.2",
